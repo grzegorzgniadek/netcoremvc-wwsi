@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Dear Manager</h1><br />
+    <h2>If you want to manage information tables.<br /> Choose one type below: </h2>
+    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+        <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Employees" asp-action="Index">Employees</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Clients" asp-action="Index">Clients</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
+            </li>
+
+        </ul>
+    </div>
+</div>

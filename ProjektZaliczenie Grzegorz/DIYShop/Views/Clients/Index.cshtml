@@ -1,0 +1,51 @@
+﻿@model IEnumerable<DIYShop.Models.ClientsModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p>
+    <a asp-action="Add">Add new client</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayName("First Name")
+            </th>
+            <th>
+                @Html.DisplayName("Last Name")
+            </th>
+            <th>
+                @Html.DisplayName("Company Name")
+            </th>
+            <th>
+                @Html.DisplayName("Address")
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Remove" asp-route-id="@item.ID">Remove</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

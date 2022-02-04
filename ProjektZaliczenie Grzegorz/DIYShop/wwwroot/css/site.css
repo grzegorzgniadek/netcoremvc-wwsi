@@ -1,0 +1,136 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+.navbar-dark .navbar-brand {
+    color: white;
+    cursor: pointer;
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    color: white;
+    background-color: #030E4F;
+    border-color: #030E4F;
+}
+
+.text-dark {
+    color: #147be3 !important;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: white;
+    border-color: #147be3;
+}
+
+.btn-primary {
+    color: black;
+    background-color: #147be3;
+    border-color: #147be3;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: black;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 2px solid #147be3;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+    color: black;
+    background-color: #030E4F;
+    border-color: #030E4F;
+    font-family: Arial;
+    font-weight: bold;
+
+
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+        color: black;
+        background-color: #030E4F;
+        border-color: #030E4F;
+        font-family: Arial;
+        font-weight: bold;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #0b0e0c9e!important;
+    color: black;
+    background-color: #030E4F;
+    border-color: #030E4F;
+}
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+    color: black;
+    background-color: #030E4F;
+    border-color: #030E4F;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+    color: black;
+    background-color: #F49F1C;
+    border-color: #030E4F;
+    font-family: Arial;
+    font-weight: bold;
+    background-image: url("backgroundimage.png");
+    background-size: cover;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #F49F1C;
+    font-family: Arial;
+    font-weight: bold;
+    background-image: url("backgroundimage.png");
+    background-size: cover;
+}
+
+.text-muted {
+    color: #000000 !important;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
